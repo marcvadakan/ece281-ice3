@@ -90,9 +90,11 @@ begin
 	---------------------------------
 	
 	-- CONCURRENT STATEMENTS --------
-	led(14 downto 4) <= (others => '0'); -- Ground unused LEDs
 	
 	led (3 downto 0) <= w_sum;
 	led(15) <= w_cout;
+	
+	led(14 downto 4) <= (others => '0'); -- Ground unused LEDs
+	
 	---------------------------------
 end top_basys3_arch;
